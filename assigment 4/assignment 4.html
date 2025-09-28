@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+</head>
+<body>
+    <hr>
+   <h1><center>Table Task 1</center></h1>
+   <hr>  
+   <center> 
+    <table border="2">
+   <tbody><tr>
+    <th colspan="2">Language and Farmwork</th>
+   </tr>
+   <tr>
+    <td>python</td>
+    <td>Django</td>
+   </tr>
+   <tr>
+    <td rowspan="2">Javascript</td>
+    <td>React.js</td>
+   </tr>
+   <tr>
+    <td>Vue.js</td>
+   </tr>
+   <tr>
+    <td>Ruby</td>
+    <td>Ruby on Rails</td>
+   </tr>   
+    </tbody></table>
+</center>
+<hr>
+<h1><center>Table Task 2</center></h1>
+<hr>
+<center>
+<table border="2">
+    <tbody><tr>
+        <th bgcolor="sky blue">Device</th>
+        <th bgcolor="sky blue">Brand</th>
+        <th bgcolor="sky blue">Specification</th>
+    </tr>
+   <tr>
+    <td>smartphone</td>
+    <td>Apple</td>
+
+   <td> <table border="2">
+    <tbody><tr>
+        <th bgcolor="yellow">Model</th>
+        <th bgcolor="yellow">storage</th>
+    </tr>
+    <tr>
+        <td>iphone 12 pro</td>
+        <td>256GB</td>
+    </tr>
+    <tr>
+        <td>iphone se</td>
+        <td>128GB</td>
+    </tr>
+
+
+    </tbody></table>
+  </td></tr><tr>
+    <td>Laptop</td>
+    <td>HP</td>
+    <td>15.6" Display</td>
+  </tr>
+  <tr>
+    <td>Tablet</td>
+    <td>Samsung</td>
+    <td>10.5" Display</td>
+  </tr>
+  
+</tbody></table>
+</center>
+<hr>
+<h1><center>Table Task 3</center></h1>
+<hr>
+<h1><center>Weather Station</center></h1>
+<center>
+    <table border="2">
+      <tbody><tr>
+        <th rowspan="2">Station</th>
+        <th colspan="2">Temperature</th>
+        <th rowspan="2">Humidity</th>
+        <th rowspan="2" colspan="2">Weather</th>
+      </tr>
+      <tr>
+     
+        <th>Max</th>
+        <th>Min</th>
+      
+       
+      </tr>
+      <tr>
+        <td>USA</td>
+        <td>24</td>
+        <td>19</td>
+        <td>60%</td>
+        <td>Cloudy</td>
+      </tr>
+      <tr>
+        <td>Germany</td>
+        <td>5</td>
+        <td>-1</td>
+        <td>70%</td>
+        <td>Rainy</td>
+      </tr>
+    </tbody></table>
+</center>
+<hr>
+<h1><center>Table Task 4</center></h1>
+<hr>
+<h2><center>Table With Uncollapsed Border</center></h2>
+<center>
+    <table border="2">
+        <tbody><tr>
+            <th>Name</th>
+            <th>Job Title</th>
+            <th>Email address</th>
+        </tr>
+        <tr>
+            <td>Anna Fitzgerald</td>
+            <td>Staff Writer</td>
+            <td>example@co,pany.com</td>
+        </tr>
+        <tr>
+            <td>John Smith</td>
+            <td>Marketing Manager</td>
+            <td>example2@company.com</td>
+        </tr>
+        <tr>
+            <td>Zendaya Grace</td>
+            <td>CEO</td>
+            <td>example2@company.com</td>
+        </tr>
+    </tbody></table>
+</center>
+<hr>
+<h1><center>Table Task 5</center></h1>
+<hr>
+<h3><center><i>A test table with merged cells</i></center></h3>
+<center>
+    <table border="1 solid">
+    <tbody><tr>
+        <th rowspan="2"></th>
+        <th colspan="2">Average</th>
+       <th rowspan="2">red<br>eyes</th>
+    </tr>
+    <tr>
+        <th>height</th>
+        <th>Weight</th>
+    </tr>
+    <tr>
+        <th>Males</th>
+        <td>1.9</td>
+        <td>0.003</td>
+        <td>40%</td>
+    </tr>
+    <tr>
+        <th>Females</th>
+        <td>1.7</td>
+        <td>0.002</td>
+        <td>43%</td>
+    </tr>
+       
+    </tbody></table>
+</center>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
